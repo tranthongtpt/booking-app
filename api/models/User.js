@@ -19,7 +19,7 @@ const UserSchema = new mongoose.Schema({
     isAdmin:{
         type:Boolean,
         default:false,
-    }
-})
+    },
+}, {timestamps:true})
 
-export default mongoose.model("User",HotelSchema)
+export default mongoose.model("User",UserSchema)
